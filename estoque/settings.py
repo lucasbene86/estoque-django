@@ -82,8 +82,8 @@ DATABASES = {
         'NAME': 'dbmysql',  # NOME DO BANCO
         'USER': 'root',  # USER DE LOGIN
         'PASSWORD': '',  # SENHA DE LOGIN
-        'HOST': 'localhost',  # LOCAL
-        'PORT': '3306'  # PORTA
+        #'HOST': 'localhost',  # LOCAL
+        #'PORT': '3306'  # PORTA
 
     }
 }
