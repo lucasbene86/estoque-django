@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,5 +7,22 @@
 </head>
 <body>
     <h1>Produtos de Estoque</h1>
+
+    <!-- Tabela -->
+    <table>
+        <caption>Titulo</caption>
+        <th>Produtos</th>
+        <th>Preço</th>
+        <th>Código</th>
+
+        {% for dados in nome %}
+            <tr>
+                <td>{{ dados.produto }}</td>
+                <td>{{ dados.preco }}</td>
+                <td>{{ dados.codigo_produto }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
 </body>
 </html>
