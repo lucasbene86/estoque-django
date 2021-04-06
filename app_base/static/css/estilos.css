@@ -38,4 +38,7 @@ table {
 
 .btn1 {
     color: rgb(66, 66, 66);
+    border-radius: 10px;
+    width: 200px;
+    height: 80px;
 }

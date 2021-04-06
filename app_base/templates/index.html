@@ -34,8 +34,36 @@
 
     <!-- Botões -->
     <div id="botao">
-        <button class="btn1" type="button">Clique</button>
+        <button class="btn1" type="button" onclick="teste()">Clique</button>
     </div>
+
+    <div id="resultado">resultado</div>
+
+    <!-- Caixa de texto enviando os dados para o views -->
+    <form method="POST" action="">
+        {% csrf_token %}
+        Nome completo:<br>
+        <input type="text" name="nome" maxlength="100" required=""><br> Sexo:
+
+        <br>
+        <input type="radio" name="genero" value="masculino" checked> Masculino
+        <input type="radio" name="genero" value="feminino"> Feminino<br> e-mail:
+      
+        <br>
+        <input type="email" name="e-mail" maxlength="50" required=""><br> Telefone:
+      
+        <br>
+        <input type="tel" name="telefone" maxlength="30" required=""><br>
+      
+        <input type="submit">
+      
+      </form>
+
+
+    <input type="text" placeholder="Digite algo" id="texto">
+
+    <!-- Função js -->
+    <script src="{% static 'js/js.js' %}"></script>
 
 </body>
 </html>
