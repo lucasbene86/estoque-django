@@ -1,4 +1,41 @@
 body {
-    background-color: rgb(43, 116, 226);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo {
+    font-family: Helvetica;
+    color: rgb(32, 32, 32);
+    text-align: center; /* Centrar texto */
+
+}
+
+/* Classe */
+.cabecalho {
+    background-color: rgb(221, 221, 221);
+    color: rgb(66, 66, 66);
+}
+
+tr {
+    border-top: 1px solid rgb(221, 221, 221);
+    border-left-width: 10px;
+}
+
+.linhas {
+    color: rgb(66, 66, 66);
+}
+
+table {
+    margin-left: 7%;
+    margin-top: 5%;
+    font-family: Helvetica; /* Fonte */
+    /* border-style:groove; /* Estilo */
+    /* border: 2px solid coral; /* Estilo + bordas */
+    text-align: center; /* Alinhamento de texto na tabela */
+    border-collapse: collapse;  /* Tipo de borda na tabela */
+    width: 70%; /* largura */
+    height: 200px; /* Altura */
+}
+
+.btn1 {
+    color: rgb(66, 66, 66);
 }

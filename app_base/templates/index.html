@@ -5,26 +5,37 @@
     <meta charset='utf-8'>
     <title>Estoque Farmacia</title>
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}"> <!-- link para o css -->
+
 </head>
 <body>
-    <h1>Produtos de Estoque</h1>
+    <h1 class="titulo">Produtos de Estoque</h1>
 
     <!-- Tabela -->
     <table>
         <caption>Titulo</caption> <!-- Titulo da tabela -->
-        <th>Produtos</th>
-        <th>Preço</th>
-        <th>Código</th>
-        
+        <thead class="cabecalho">
+            <th>Produtos</th>
+            <th>Preço</th>
+            <th>Código</th>
+        </thead>
+
         <!-- Loop for -->
-        {% for dados in nome %}
-            <tr>
-                <td>{{ dados.produto }}</td>
-                <td>{{ dados.preco }}</td>
-                <td>{{ dados.codigo_produto }}</td>
-            </tr>
-        {% endfor %}
+        <tbody class="linhas">
+            {% for dados in nome %}
+                <tr>
+                    <td>{{ dados.produto }}</td>
+                    <td>{{ dados.preco }}</td>
+                    <td>{{ dados.codigo_produto }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
     </table>
+
+    <!-- Botões -->
+    <div id="botao">
+        <button class="btn1" type="button">Clique</button>
+    </div>
 
 </body>
 </html>
