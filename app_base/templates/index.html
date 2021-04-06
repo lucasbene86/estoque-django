@@ -4,17 +4,19 @@
 <head>
     <meta charset='utf-8'>
     <title>Estoque Farmacia</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}"> <!-- link para o css -->
 </head>
 <body>
     <h1>Produtos de Estoque</h1>
 
     <!-- Tabela -->
     <table>
-        <caption>Titulo</caption>
+        <caption>Titulo</caption> <!-- Titulo da tabela -->
         <th>Produtos</th>
         <th>Preço</th>
         <th>Código</th>
-
+        
+        <!-- Loop for -->
         {% for dados in nome %}
             <tr>
                 <td>{{ dados.produto }}</td>
